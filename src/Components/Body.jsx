@@ -1,11 +1,24 @@
-import React, { useState } from 'react';
-
+import React, { useState,useEffect, use } from 'react';
 import ResContainer from './ResContainer';
-import resObj from '../utils/mockdata';
 import { IMG_CDN_URL } from '../utils/Constants';
 
 const Body = () => {
-  const [listofRestaurants, setListofRestaurants] = useState(resObj);
+  const [listofRestaurants, setListofRestaurants] = useState([]);
+
+  useEffect(() => {
+    fetchData();
+  }, []);
+
+  const fetchData = async () => {
+    const data = await fetch(
+      "https://www.swiggy.com/dapi/restaurants/list/v5?lat=17.7237152&lng=83.3067747&collection=83639&tags=layout_CCS_Biryani&sortBy=&filters=&type=rcv2&offset=0&carousel=true&third_party_vendor=1"
+    );
+    const json = await data.json();
+    console.log(json);
+   
+  }
+
+
 
   return (
     <div>

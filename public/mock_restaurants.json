@@ -1,0 +1,26 @@
+[
+  {
+    "info": {
+      "id": "1",
+      "name": "Mock Biryani House",
+      "cuisines": ["Biryani", "Indian"],
+      "cloudinaryImageId": "",
+      "avgRatingString": "4.6",
+      "sla": { "slaString": "25 mins" },
+      "costForTwo": "₹300 for two"
+    }
+  },
+  {
+    "info": {
+      "id": "2",
+      "name": "Mock Spice Kitchen",
+      "cuisines": ["North Indian", "Chinese"],
+      "cloudinaryImageId": "",
+      "avgRatingString": "4.2",
+      "sla": { "slaString": "30 mins" },
+      "costForTwo": "₹400 for two"
+    }
+  }
+]
+
+
